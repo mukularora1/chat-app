@@ -1,0 +1,19 @@
+.chatBodyWrapper {
+    width: 100vw;
+    border: 1px solid red;
+    display: flex;
+}
+.chatBodyWrapper__left {
+    flex: 0.4;
+    overflow: auto !important;
+    height: calc(100vh - 90px);
+    padding: 10px;
+}
+.chatBodyWrapper__right {
+    padding: 10px;
+    background-color: rgb(247, 247, 247);
+    flex: 0.6;
+    overflow: auto !important;
+    width: 100%;
+    height: calc(100vh - 90px);
+}
