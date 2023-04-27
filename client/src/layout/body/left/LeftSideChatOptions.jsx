@@ -111,15 +111,17 @@ function LeftSideChatOptions() {
                     variant='outlined'
                 />
                 <Divider light sx={{ marginTop: '20px' }} />
-                {chatProfiles.map((el, index) => {
-                    return (
-                        <ProfileFrameContainer
-                            title={el.title}
-                            lastMessage={el.lastMessage}
-                            key={index}
-                        />
-                    );
-                })}
+                <div style={{overflow:"auto",height:"70vh"}}>
+                    {chatProfiles.map((el, index) => {
+                        return (
+                            <ProfileFrameContainer
+                                title={el.title}
+                                lastMessage={el.lastMessage}
+                                key={index}
+                            />
+                        );
+                    })}
+                </div>
             </div>
         </>
     );
